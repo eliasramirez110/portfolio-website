@@ -87,8 +87,8 @@ main {
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
-    height: 250px;
-    width: 250px;
+    height: 300px; 
+    width: 200px;
   }
   
   .bio {
@@ -112,6 +112,24 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+  }
+}
+
+//Work/Projects
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
   }
 }
 
